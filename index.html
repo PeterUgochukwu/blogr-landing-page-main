@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: hsl(240, 2%, 79%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class = "logo-content"><img src="./images/logo.svg" alt="logo"></div>
+      <div class="icon-open"><img src="./images/icon-hamburger.svg" alt="icon-open" onclick="openMobile()"></div>
+      <div class="icon-close"><img src="./images/icon-close.svg" alt="icon-close" onclick="closeMobile()"></div>
+    <div class="nav-container" id ="nav-mobile">
+      <div class="dropdown">
+        <div>
+          <button class="dropbtn" onclick="myFunction()">Product</button>
+          <img class = "myImage" src="./images/icon-arrow-light.svg" alt="icon-arrow-dark">
+          <img  class = "iconArrow-dark1"src="./images/icon-arrow-dark.svg" alt="icon-arrow">
+        </div>
+        <div class="dropdown-content">
+          <a href="">Overview</a>
+          <a href="">Pricing</a>
+          <a href="">Marketplace</a>
+          <a href="">Features</a>
+          <a href="">Integrations</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div>
+          <button class="dropbtn" onclick="Contactdrop()">Company</button>
+          <img class = "dImage" src="./images/icon-arrow-light.svg" alt="icon-arrow-dark">
+          <img  class = "iconArrow-dark2"src="./images/icon-arrow-dark.svg" alt="icon-arrow">
+        </div>
+        <div id="Contact" class="dropdown-content">
+          <a href="">About</a>
+          <a href="">Team</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div>
+          <button class="dropbtn" onclick="connect()">Connect</button>
+          <img class = "dImageArrow" src="./images/icon-arrow-light.svg" alt="icon-arrow-dark">
+          <img  class = "iconArrow-dark3"src="./images/icon-arrow-dark.svg" alt="icon-arrow">
+        </div>
+        <div id="Connect" class="dropdown-content">
+          <a href="">Contact</a>
+          <a href="">Newsletter</a>
+          <a href="">LinkedIn</a>
+        </div>
+      </div>
+      <div class="line-gap"></div>
+      <div class="mobile-reg">
+        <div class="login" >
+          <a href="#">Login</a>
+        </div>
+        <div class="signUp">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <div class="register">
+      <div class="login" >
+        <a href="#">Login</a>
+      </div>
+      <div class="signUp">
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+     
+    </div>
+    <div class="head-intro">
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+    </div>
+    <div class="head-button">
+      <div class="headButton-wrapper">
+        <button>Start for Free</button>
+      <button>Learn More</button>
+      </div>
+      
+    </div>
+
+  </header>
+  <section class="about">
+    <h2>Designed for the future</h2>
+    <div class="a-wrapper">
+      <div class="a-left">
+       <div class="a-left-conent">
+        <h3>Introducing an extensible editor</h3>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.</p>
+       </div> 
+       <div class="a-left-conent">
+        <h3>Robust content management</h3>
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+       </div> 
+      </div>
+      <div class="a-right"> 
+        <img  class = "desktop-illustrate"src="./images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+        <img  class = "mobile-illustrate"src = "./images/illustration-editor-mobile.svg" alt = "illustration-editor-mobile">
+      </div>
+    </div>
+  </section>
+  <section class="features">
+<div class="f-left">
+  <img src="./images/illustration-phones.svg" alt="illustration-phones">
+</div>
+<div class="f-right">
+<h1>State of the Art Infrastructure</h1>
+<p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+</div>
+  </section>
+  <section class="service">
+    <div class="s-left">
+      <img class="laptop-desk" src="./images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+      <img  class= "laptop-mobile"src="./images/illustration-laptop-mobile.svg" alt="illustration-editor-mobile">
+    </div>
+    <div class="s-right">
+      <div class="s-rightC">
+        <h2> Free, open, simple</h2>
+        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      </div>
+      <div class="s-rightC">
+        <h2> Powerful tooling</h2>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="f-wrapper">
+      <div class="f-one"><img src="./images/logo.svg" alt="logo"></div>
+    <div class="f-two">
+      <h3>Product</h3>
+      <ul>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Marketplace</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href=""> Integrations</a></li>
+      </ul>
+    </div>
+    <div class="f-two">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href=""> Team</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href=""> Careers</a></li>
+      </ul>
+    </div>
+    <div class="f-two">
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="">Contact</a></li>
+        <li><a href=""> Newsletter</a></li>
+        <li><a href="">LinkedIn</a></li>
+      </ul>
+    </div>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/PeterUgochukwu">Ugochukwu Peter</a>.
+    </div>
+  </footer>
+
+  
+</body>
+<script src="./app.js"></script>
+</html>
